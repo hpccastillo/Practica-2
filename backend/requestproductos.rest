@@ -1,0 +1,14 @@
+GET http://localhost:5000/productos
+
+###
+GET http://localhost:5000/productos/1
+
+###
+POST  http://localhost:5000/productos
+Content-Type: application/json
+
+{
+    "nombre": "Tulipan",
+    "descripcion": "Tres sabores",
+    "foto": "https://drive.google.com/file/d/1Q7YHDsPIMreUw5dwDlXZDEtQXpB-ioNN/view?usp=share_link"
+}

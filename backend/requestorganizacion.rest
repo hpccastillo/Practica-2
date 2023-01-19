@@ -1,0 +1,33 @@
+GET http://localhost:5000/organizacion
+
+###
+GET http://localhost:5000/organizacion/1
+
+###
+POST  http://localhost:5000/organizacion
+Content-Type: application/json
+
+{
+    "nombre": "CAFECOM",
+    "foto": "https://drive.google.com/file/d/1ABTMnksY27lDPqEoNmZwvITODUo5vDBu/view?usp=share_link",
+    "descripcion": "En 1996, CAFECOM nace de la pasión por el café de nuestro fundador",
+    "mision": "Siempre comprometidos con las necesidades de nuestros clientes",
+    "vision": "Crecer armónicamente forjando relaciones duraderas",
+    "valores": "Integridad, Respeto, Comunicación"
+}
+
+###
+PATCH   http://localhost:5000/organizacion/1
+Content-Type: application/json
+
+{
+    "nombre": "CAFECOM",
+    "foto": "https://drive.google.com/file/d/1ABTMnksY27lDPqEoNmZwvITODUo5vDBu/view?usp=share_link",
+    "descripcion": "En 1996, CAFECOM nace de la pasión por el café de nuestro fundador",
+    "mision": "Siempre comprometidos con las necesidades de nuestros clientes",
+    "vision": "Crecer armónicamente forjando relaciones duraderas",
+    "valores": "Integridad, Respeto, Comunicación"
+}
+
+###
+DELETE    http://localhost:5000/organizacion/1

@@ -1,0 +1,16 @@
+GET http://localhost:5000/mensaje
+
+###
+GET http://localhost:5000/mensaje/1
+
+###
+POST  http://localhost:5000/mensaje
+Content-Type: application/json
+
+{
+     "cuerpo": "Cuatro Tulipanes",
+    "telefono": "0973112584",
+    "correo": "lauratapia@gmail.com",
+    "asunto": "Pedido",
+    "nombre_remitente": "Laura Tapia"
+}
